@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Google Map - McDonald's Locations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="top-left-logo">samsd</img>
+      <div class="top-middle-name">FoodFly</div>
+      <nav class="top-right-hamburger">
+        <img
+          src="hamburger.png"
+          alt="hamburger_menu"
+          class="hamburger"
+        />
+      </nav>
+
+      <nav class="menu_container">
+        <img
+          src="images/hamburger.png"
+          alt="hamburger_menu"
+          class="hamburger"
+          onclick="toggleMenu()"
+        />
+        <p class="menu_text" onclick="toggleMenu()">Menu</p>
+      </nav>
+
+      <nav class="menu_click" id="menu_click">
+        <div class="close_menu" onclick="toggleMenu()">Close menu</div>
+        <a href="#profile">Profile</a>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>s
+    </header>
+
+    <div class="search-bar" onclick="search()">
+      <input
+        type="search"
+        id="search-text"
+        placeholder="Search Ingredients"
+        class="search-text"
+      />
+      <img src="search_icon.png" alt="search icon" class="search-icon" />
+    </div>
+
+    <div id="map"></div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-MoeZwHV3zM3E1LAjX4QULebiKGuJhUM&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <script src="google-maps.js"></script>
+  </body>
+</html>

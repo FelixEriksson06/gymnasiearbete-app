@@ -1,0 +1,68 @@
+body {
+    max-width: 1080px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(247, 255, 216, 0.5);
+    border-bottom: 1px solid gray;
+  }
+  
+  .top-left-logo {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .top-middle-name {
+    font-size: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .top-right-hamburger {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .hamburger {
+    width: 20%;
+  }
+  
+  #map {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    margin: 20%;
+  }
+  
+  .search-container_desk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2%;
+    margin-left: 5%;
+    width: 50%;
+  }
+  
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1%;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  
+  .search-icon {
+    width: 20%;
+  }
+  
+  .search-text {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 1.5%;
+    width: 100%;
+  }
