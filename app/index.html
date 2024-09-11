@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Google Map - McDonald's Locations</title>
@@ -8,34 +11,15 @@
   </head>
   <body>
     <header>
-      <img class="top-left-logo">samsdklefklefnslkfskl</img>
+      <nav class="top-left-hamburger">
+        <img
+          src="images/hamburger-menu.png"
+          alt="hamburger_menu"
+          class="hamburger"
+        />
+      </nav>
       <div class="top-middle-name">FoodFly</div>
-      <nav class="top-right-hamburger">
-        <img
-          src="hamburger.png"
-          alt="hamburger_menu"
-          class="hamburger"
-        />
-      </nav>
-
-      <nav class="menu_container">
-        <img
-          src="images/hamburger.png"
-          alt="hamburger_menu"
-          class="hamburger"
-          onclick="toggleMenu()"
-        />
-        <p class="menu_text" onclick="toggleMenu()">Menu</p>
-      </nav>
-
-      <nav class="menu_click" id="menu_click">
-        <div class="close_menu" onclick="toggleMenu()">Close menu</div>
-        <a href="#profile">Profile</a>
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </nav>s
+      <img class="top-right-logo">samsdkslkfskl</img>
     </header>
 
     <div class="search-bar" onclick="search()">
@@ -45,7 +29,7 @@
         placeholder="Search Ingredients"
         class="search-text"
       />
-      <img src="search_icon.png" alt="search icon" class="search-icon" />
+      <img src="images/search-icon-png-5.png" alt="search icon" class="search-icon" />
     </div>
 
     <div id="map"></div>
